@@ -1,145 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'front_angular';
-  items: MenuItem[];
-  constructor() {
+  items: MenuItem[] = [];
+
+  constructor() { }
+
+  ngOnInit() {
     this.items = [
-      {
-        label: 'Botones',
-        icon: 'pi pi-fw pi-file',
-        items: [
-          {
-            label: 'Media',
-            icon: 'pi pi-fw pi-plus',
-            items: [
-              {
-                label: 'Mensajes',
-                icon: 'pi pi-fw pi-bookmark'
-              },
-              {
-                label: 'Organizacion Texto',
-                icon: 'pi pi-fw pi-video'
-              }
-            ]
-          },
-          {
-            label: 'Delete',
-            icon: 'pi pi-fw pi-trash'
-          },
-          {
-            separator: true
-          },
-          {
-            label: 'Export',
-            icon: 'pi pi-fw pi-external-link'
-          }
-        ]
-      },
-      {
-        label: 'Edit',
-        icon: 'pi pi-fw pi-pencil',
-        items: [
-          {
-            label: 'Left',
-            icon: 'pi pi-fw pi-align-left'
-          },
-          {
-            label: 'Right',
-            icon: 'pi pi-fw pi-align-right'
-          },
-          {
-            label: 'Center',
-            icon: 'pi pi-fw pi-align-center'
-          },
-          {
-            label: 'Justify',
-            icon: 'pi pi-fw pi-align-justify'
-          }
-        ]
-      },
-      {
-        label: 'Users',
-        icon: 'pi pi-fw pi-user',
-        items: [
-          {
-            label: 'New',
-            icon: 'pi pi-fw pi-user-plus'
-          },
-          {
-            label: 'Delete',
-            icon: 'pi pi-fw pi-user-minus'
-          },
-          {
-            label: 'Search',
-            icon: 'pi pi-fw pi-users',
-            items: [
-              {
-                label: 'Filter',
-                icon: 'pi pi-fw pi-filter',
-                items: [
-                  {
-                    label: 'Print',
-                    icon: 'pi pi-fw pi-print'
-                  }
-                ]
-              },
-              {
-                icon: 'pi pi-fw pi-bars',
-                label: 'List'
-              }
-            ]
-          }
-        ]
-      },
-      {
-        label: 'Events',
-        icon: 'pi pi-fw pi-calendar',
-        items: [
-          {
-            label: 'Edit',
-            icon: 'pi pi-fw pi-pencil',
-            items: [
-              {
-                label: 'Save',
-                icon: 'pi pi-fw pi-calendar-plus'
-              },
-              {
-                label: 'Delete',
-                icon: 'pi pi-fw pi-calendar-minus'
-              }
-            ]
-          },
-          {
-            label: 'Archieve',
-            icon: 'pi pi-fw pi-calendar-times',
-            items: [
-              {
-                label: 'Remove',
-                icon: 'pi pi-fw pi-calendar-minus'
-              }
-            ]
-          }
-        ]
-      },
-      {
-        separator: true
-      },
-      {
-        label: 'Quit',
-        icon: 'pi pi-fw pi-power-off'
-      }
+      { label: 'Botones', icon: 'pi pi-home', routerLink: ['/botones'] },
+      { label: 'Media', icon: 'pi pi-chart-line', routerLink: ['/media'] },
+      { label: 'Mensajes', icon: 'pi pi-list', routerLink: ['/mensajes'] },
+      { label: 'Organización Información', icon: 'pi pi-inbox', routerLink: ['/organizacionInfo'] },
+      { label: 'Organización Texto', icon: 'pi pi-inbox', routerLink: ['/organizacionTexto'] }
     ];
   }
 
   save(action: string) {
-    console.log(action)
+    console.log(action);
   }
 }
+
 
