@@ -9,10 +9,20 @@ import { SplitButtonModule } from 'primeng/splitbutton';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BotonesComponent } from './botones/botones.component';
+import { MensajesComponent } from './mensajes/mensajes.component';
+import { MediaComponent } from './media/media.component';
+import { OrganizacionInformacionComponent } from './organizacion-informacion/organizacion-informacion.component';
+import { OrganizacionTextoComponent } from './organizacion-texto/organizacion-texto.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BotonesComponent,
+    MensajesComponent,
+    MediaComponent,
+    OrganizacionInformacionComponent,
+    OrganizacionTextoComponent
   ],
   imports: [
     BrowserModule,

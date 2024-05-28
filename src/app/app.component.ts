@@ -12,19 +12,19 @@ export class AppComponent {
   constructor() {
     this.items = [
       {
-        label: 'File',
+        label: 'Botones',
         icon: 'pi pi-fw pi-file',
         items: [
           {
-            label: 'New',
+            label: 'Media',
             icon: 'pi pi-fw pi-plus',
             items: [
               {
-                label: 'Bookmark',
+                label: 'Mensajes',
                 icon: 'pi pi-fw pi-bookmark'
               },
               {
-                label: 'Video',
+                label: 'Organizacion Texto',
                 icon: 'pi pi-fw pi-video'
               }
             ]
