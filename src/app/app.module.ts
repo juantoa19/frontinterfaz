@@ -15,6 +15,9 @@ import { MediaComponent } from './media/media.component';
 import { OrganizacionInformacionComponent } from './organizacion-informacion/organizacion-informacion.component';
 import { OrganizacionTextoComponent } from './organizacion-texto/organizacion-texto.component';
 import { MenubarModule } from 'primeng/menubar';
+import { HomeComponent } from './home/home.component';
+import { ImageModule } from 'primeng/image';
+import { GalleriaModule } from 'primeng/galleria';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { MenubarModule } from 'primeng/menubar';
     MensajesComponent,
     MediaComponent,
     OrganizacionInformacionComponent,
-    OrganizacionTextoComponent
+    OrganizacionTextoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { MenubarModule } from 'primeng/menubar';
     SplitButtonModule,
     ToastModule,
     BrowserAnimationsModule,
-    MenubarModule
+    MenubarModule, 
+    ImageModule,
+    GalleriaModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

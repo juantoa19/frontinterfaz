@@ -1,1 +1,19 @@
 <p>media works!</p>
+<div class="card flex justify-content-center">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+        alt="Image"
+        width="250" />
+</div>
+
+<div class="card flex justify-content-center">
+    <p-image 
+        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" 
+        [preview]="true" 
+        alt="Image" 
+        width="250">
+            <ng-template pTemplate="indicator">
+                <i class="pi pi-check"></i>
+            </ng-template>
+    </p-image>
+</div>

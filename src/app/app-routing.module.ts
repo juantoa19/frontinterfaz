@@ -6,9 +6,11 @@ import { MensajesComponent } from './mensajes/mensajes.component';
 import { OrganizacionInformacionComponent } from './organizacion-informacion/organizacion-informacion.component';
 import { OrganizacionTextoComponent } from './organizacion-texto/organizacion-texto.component';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'botones', component: BotonesComponent },
   { path: 'media', component: MediaComponent },
   { path: 'mensajes', component: MensajesComponent },

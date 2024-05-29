@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
+      { label: 'Home', icon: 'pi pi-home', routerLink: ['/home'] },
       { label: 'Botones', icon: 'pi pi-home', routerLink: ['/botones'] },
       { label: 'Media', icon: 'pi pi-chart-line', routerLink: ['/media'] },
       { label: 'Mensajes', icon: 'pi pi-list', routerLink: ['/mensajes'] },

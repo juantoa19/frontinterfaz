@@ -1,1 +1,166 @@
 <p>botones works!</p>
+<!--
+<h1>
+  <p-button label="Primary" [raised]="true" />
+<p-button label="Secondary" [raised]="true" severity="secondary" [disabled]="true"/>
+<p-button label="Success" [raised]="true" severity="success" />
+<p-button label="Info" [raised]="true" severity="info" />
+<p-button label="Warning" [raised]="true" severity="warning" />
+<p-button label="Help" [raised]="true" severity="help" />
+<p-button label="Danger" [raised]="true" severity="danger" />
+<p-button label="Contrast" [raised]="true" severity="contrast" />
+</h1>
+
+<h1>
+  <div class="card flex flex-wrap gap-3 justify-content-center">
+    <p-button label="Primary" [text]="true" [raised]="true" />
+    <p-button label="Secondary" [text]="true" [raised]="true" severity="secondary" />
+    <p-button label="Success" [text]="true" [raised]="true" severity="success" />
+    <p-button label="Info" [text]="true" [raised]="true" severity="info" />
+    <p-button label="Warning" [text]="true" [raised]="true" severity="warning" />
+    <p-button label="Help" [text]="true" [raised]="true" severity="help" />
+    <p-button label="Danger" [text]="true" [raised]="true" severity="danger" />
+    <p-button label="Plain" [text]="true" [raised]="true" [plain]="true" />
+</div>
+</h1>
+
+<h1>ico
+  <div class="card">
+    <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+        <p-button icon="pi pi-check" />
+        <p-button icon="pi pi-bookmark" severity="secondary" />
+        <p-button icon="pi pi-search" severity="success" />
+        <p-button icon="pi pi-user" severity="info" />
+        <p-button icon="pi pi-bell" severity="warning" />
+        <p-button icon="pi pi-heart" severity="help" />
+        <p-button icon="pi pi-times" severity="danger" />
+    </div>
+    <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+        <p-button icon="pi pi-check" [rounded]="true" />
+        <p-button icon="pi pi-bookmark" [rounded]="true" severity="secondary" />
+        <p-button icon="pi pi-search" [rounded]="true" severity="success" />
+        <p-button icon="pi pi-user" [rounded]="true" severity="info" />
+        <p-button icon="pi pi-bell" [rounded]="true" severity="warning" />
+        <p-button icon="pi pi-heart" [rounded]="true" severity="help" />
+        <p-button icon="pi pi-times" [rounded]="true" severity="danger" />
+    </div>
+    <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+        <p-button icon="pi pi-check" [rounded]="true" [outlined]="true" />
+        <p-button icon="pi pi-bookmark" [rounded]="true" severity="secondary" [outlined]="true" />
+        <p-button icon="pi pi-search" [rounded]="true" severity="success" [outlined]="true" />
+        <p-button icon="pi pi-user" [rounded]="true" severity="info" [outlined]="true" />
+        <p-button icon="pi pi-bell" [rounded]="true" severity="warning" [outlined]="true" />
+        <p-button icon="pi pi-heart" [rounded]="true" severity="help" [outlined]="true" />
+        <p-button icon="pi pi-times" [rounded]="true" severity="danger" [outlined]="true" />
+    </div>
+    <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+        <p-button icon="pi pi-check" [rounded]="true" [text]="true" [raised]="true" />
+        <p-button icon="pi pi-bookmark" [rounded]="true" [text]="true" [raised]="true" severity="secondary" />
+        <p-button icon="pi pi-search" [rounded]="true" [text]="true" [raised]="true" severity="success" />
+        <p-button icon="pi pi-user" [rounded]="true" [text]="true" [raised]="true" severity="info" />
+        <p-button icon="pi pi-bell" [rounded]="true" [text]="true" [raised]="true" severity="warning" />
+        <p-button icon="pi pi-heart" [rounded]="true" [text]="true" [raised]="true" severity="help" />
+        <p-button icon="pi pi-times" [rounded]="true" [text]="true" [raised]="true" severity="danger" />
+    </div>
+    <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+        <p-button icon="pi pi-check" [rounded]="true" [text]="true" />
+        <p-button icon="pi pi-bookmark" [rounded]="true" [text]="true" severity="secondary" />
+        <p-button icon="pi pi-search" [rounded]="true" [text]="true" severity="success" />
+        <p-button icon="pi pi-user" [rounded]="true" [text]="true" severity="info" />
+        <p-button icon="pi pi-bell" [rounded]="true" [text]="true" severity="warning" />
+        <p-button icon="pi pi-heart" [rounded]="true" [text]="true" severity="help" />
+        <p-button icon="pi pi-times" [rounded]="true" [text]="true" severity="danger" />
+    </div>
+</div>
+</h1>
+
+<h1>Grupo
+  <div class="card flex justify-content-center flex-wrap gap-3">
+    <p-button label="Emails" badge="2" />
+    <p-button 
+        label="Messages" 
+        icon="pi pi-users" 
+        badge="8" 
+        badgeClass="p-badge-contrast" 
+        outlined="true" />
+</div>
+</h1>
+<h1>Split
+
+  <div class="card flex justify-content-center">
+    <p-toast />
+    <p-splitButton 
+        label="Save" 
+        (onClick)="save('info')" 
+        [model]="items" />
+</div>
+
+</h1>
+<h1>Split2
+  <div class="card flex justify-content-center flex-wrap gap-3">
+    <p-toast />
+    <p-splitButton 
+        label="Primary" 
+        [model]="items" 
+        (onClick)="save('info')" 
+        raised />
+    <p-splitButton 
+        label="Secondary" 
+        [model]="items" 
+        (onClick)="save('info')" 
+        raised 
+        severity="secondary" />
+    <p-splitButton 
+        label="Success" 
+        [model]="items" 
+        (onClick)="save('info')" 
+        raised 
+        severity="success" />
+    <p-splitButton 
+        label="Info" 
+        [model]="items" 
+        (onClick)="save('info')" 
+        raised 
+        severity="info" />
+    <p-splitButton 
+        label="Warning" 
+        [model]="items" 
+        (onClick)="save('info')" 
+        raised 
+        severity="warning" />
+    <p-splitButton 
+        label="Help" 
+        [model]="items" 
+        (onClick)="save('info')" 
+        raised 
+        severity="help" />
+    <p-splitButton 
+        label="Danger" 
+        [model]="items" 
+        (onClick)="save('info')" 
+        raised 
+        severity="danger" />
+</div>
+</h1>
+
+<h1>Split3
+  <div class="card flex justify-content-center">
+    <p-toast />
+    <p-splitButton 
+        label="Save" 
+        (onClick)="save('info')" 
+        severity="contrast" 
+        [model]="items">
+            <ng-template pTemplate="content">
+                <span class="flex align-items-center font-bold">
+                    <img 
+                        alt="logo" 
+                        src="https://primefaces.org/cdn/primeng/images/logo.svg" 
+                        style="height: 1rem; margin-right: 0.5rem" />
+                    <span>PrimeNG</span>
+                </span>
+            </ng-template>
+    </p-splitButton>
+</div>
+</h1>
+-->
