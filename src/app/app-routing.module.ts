@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BotonesComponent } from './botones/botones.component';
-import { MediaComponent } from './media/media.component';
-import { MensajesComponent } from './mensajes/mensajes.component';
-import { OrganizacionInformacionComponent } from './organizacion-informacion/organizacion-informacion.component';
-import { OrganizacionTextoComponent } from './organizacion-texto/organizacion-texto.component';
+import { MediaComponent } from './components/media/media.component';
+import { MensajesComponent } from './components/mensajes/mensajes.component';
+import { OrganizacionInformacionComponent } from './components/organizacion-informacion/organizacion-informacion.component';
+import { OrganizacionTextoComponent } from './components/organizacion-texto/organizacion-texto.component';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 const routes: Routes = [
