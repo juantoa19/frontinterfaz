@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BotonesComponent } from './botones/botones.component';
+import { BotonesComponent } from './components/botones/botones.component';
 import { MediaComponent } from './components/media/media.component';
 import { MensajesComponent } from './components/mensajes/mensajes.component';
 import { OrganizacionInformacionComponent } from './components/organizacion-informacion/organizacion-informacion.component';
@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'mensajes', component: MensajesComponent },
   { path: 'organizacionInfo', component: OrganizacionInformacionComponent },
   { path: 'organizacionTexto', component: OrganizacionTextoComponent },
+  
   { path: '**', component: AppComponent }
 ];
 

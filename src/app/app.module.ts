@@ -20,6 +20,10 @@ import { ImageModule } from 'primeng/image';
 import { GalleriaModule } from 'primeng/galleria';
 import { CarrusellComponent } from './components/carrusell/carrusell.component';
 
+//servicios Internos
+
+import { CarrusellService } from './service/carrusell/carrusell.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +46,7 @@ import { CarrusellComponent } from './components/carrusell/carrusell.component';
     ImageModule,
     GalleriaModule
   ],
-  providers: [MessageService],
+  providers: [CarrusellService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
