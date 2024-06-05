@@ -19,7 +19,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ImageModule } from 'primeng/image';
 import { GalleriaModule } from 'primeng/galleria';
 import { CarrusellComponent } from './components/carrusell/carrusell.component';
-
+import { MessagesModule } from 'primeng/messages';
 //servicios Internos
 
 import { CarrusellService } from './service/carrusell/carrusell.service';
@@ -42,9 +42,10 @@ import { CarrusellService } from './service/carrusell/carrusell.service';
     SplitButtonModule,
     ToastModule,
     BrowserAnimationsModule,
-    MenubarModule, 
+    MenubarModule,
     ImageModule,
-    GalleriaModule
+    GalleriaModule,
+    MessagesModule
   ],
   providers: [CarrusellService],
   bootstrap: [AppComponent]
