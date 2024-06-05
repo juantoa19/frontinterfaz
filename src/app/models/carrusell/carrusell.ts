@@ -1,13 +1,6 @@
-export interface Productos {
-    id?: string;
-    code?: string;
-    name?: string;
-    description?: string;
-    price?: number;
-    quantity?: number;
-    inventoryStatus?: string;
-    category?: string;
-    image?: string;
-    rating?: number;
-
+export interface Productos { 
+    itemImageSrc?: string;
+    thumbnailImageSrc?: string;
+    alt?: string;
+    title?: string;
 }

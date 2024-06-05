@@ -22,6 +22,7 @@ import { MessagesModule } from 'primeng/messages';
 import { CarrusellService } from './service/carrusell/carrusell.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'primeng/carousel';
+import { GaleriaComponent } from './components/galeria/galeria.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CarouselModule } from 'primeng/carousel';
     OrganizacionInformacionComponent,
     OrganizacionTextoComponent,
     HomeComponent,
-    CarrusellComponent
+    CarrusellComponent,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,
