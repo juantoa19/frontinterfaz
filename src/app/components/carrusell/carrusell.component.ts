@@ -5,17 +5,16 @@ import { CarrusellService } from '../../service/carrusell/carrusell.service';
 @Component({
   selector: 'app-carrusell',
   templateUrl: './carrusell.component.html',
-  styleUrl: './carrusell.component.scss'
 })
 export class CarrusellComponent {
-  productos : Productos[] = [];
+  productos: Productos[] = [];
 
-  constructor(private carruselService: CarrusellService){
+  constructor(private carruselService: CarrusellService) {
 
   }
 
-  ngOnInit(){
-    this.carruselService.getProducts().then(productos => {this.productos = productos})
+  ngOnInit() {
+    this.carruselService.getProducts().then(productos => { this.productos = productos })
   }
 
 }

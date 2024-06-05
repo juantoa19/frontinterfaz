@@ -7,16 +7,18 @@ import { OrganizacionInformacionComponent } from './components/organizacion-info
 import { OrganizacionTextoComponent } from './components/organizacion-texto/organizacion-texto.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { CarrusellComponent } from './components/carrusell/carrusell.component';
 
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'botones', component: BotonesComponent },
   { path: 'media', component: MediaComponent },
+  { path: 'carrusell', component: CarrusellComponent },
   { path: 'mensajes', component: MensajesComponent },
   { path: 'organizacionInfo', component: OrganizacionInformacionComponent },
   { path: 'organizacionTexto', component: OrganizacionTextoComponent },
-  
+
   { path: '**', component: AppComponent }
 ];
 

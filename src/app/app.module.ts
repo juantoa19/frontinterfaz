@@ -21,8 +21,8 @@ import { GalleriaModule } from 'primeng/galleria';
 import { CarrusellComponent } from './components/carrusell/carrusell.component';
 import { MessagesModule } from 'primeng/messages';
 //servicios Internos
-
 import { CarrusellService } from './service/carrusell/carrusell.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,8 @@ import { CarrusellService } from './service/carrusell/carrusell.service';
     MenubarModule,
     ImageModule,
     GalleriaModule,
-    MessagesModule
+    MessagesModule,
+    HttpClientModule
   ],
   providers: [CarrusellService],
   bootstrap: [AppComponent]
