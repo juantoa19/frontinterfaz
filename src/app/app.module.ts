@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { ButtonModule } from 'primeng/button';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { ToastModule } from 'primeng/toast';
@@ -23,6 +21,7 @@ import { MessagesModule } from 'primeng/messages';
 //servicios Internos
 import { CarrusellService } from './service/carrusell/carrusell.service';
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -46,7 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
     ImageModule,
     GalleriaModule,
     MessagesModule,
-    HttpClientModule
+    HttpClientModule,
+    CarouselModule
   ],
   providers: [CarrusellService],
   bootstrap: [AppComponent]
