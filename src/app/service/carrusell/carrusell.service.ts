@@ -10,7 +10,7 @@ import { Productos } from '../../models/carrusell/carrusell';
 export class CarrusellService {
 
 
-  /* Para llamar por json
+  ///Para llamar por json
   constructor(private http: HttpClient) { }
 
   getProductos(): Observable<any[]> {
@@ -22,8 +22,10 @@ export class CarrusellService {
     );
   }
 }
-  */
-  private productos: Productos[] = [
+
+
+/*
+private productos: Productos[] = [
     {
       id: '1',
       name: 'Producto 1',
@@ -78,4 +80,6 @@ export class CarrusellService {
       observer.complete();
     });
   }
+    
 }
+  */
