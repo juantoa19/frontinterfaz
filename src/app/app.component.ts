@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
       { label: 'Media', icon: 'pi pi-chart-line', routerLink: ['/media'] },
       { label: 'Galeria', icon: 'pi pi-chart-line', routerLink: ['/galeria'] },
       { label: 'Carrusell', icon: 'pi pi-chart-line', routerLink: ['/carrusell'] },
+      { label: 'Card', icon: 'pi pi-chart-line', routerLink: ['/card'] },
       { label: 'Mensajes', icon: 'pi pi-list', routerLink: ['/mensajes'] },
       { label: 'Organización Información', icon: 'pi pi-inbox', routerLink: ['/organizacionInfo'] },
       { label: 'Organización Texto', icon: 'pi pi-inbox', routerLink: ['/organizacionTexto'] }

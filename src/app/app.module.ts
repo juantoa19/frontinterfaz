@@ -23,6 +23,8 @@ import { CarrusellService } from './service/carrusell/carrusell.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'primeng/carousel';
 import { GaleriaComponent } from './components/galeria/galeria.component';
+import { CardComponent } from './components/card/card.component';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
     OrganizacionTextoComponent,
     HomeComponent,
     CarrusellComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
     GalleriaModule,
     MessagesModule,
     HttpClientModule,
-    CarouselModule
+    CarouselModule,
+    CardModule
   ],
   providers: [CarrusellService],
   bootstrap: [AppComponent]

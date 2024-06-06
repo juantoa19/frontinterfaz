@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CarrusellComponent } from './components/carrusell/carrusell.component';
 import { GaleriaComponent } from './components/galeria/galeria.component'
+import { CardComponent } from './components/card/card.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'media', component: MediaComponent },
   { path: 'galeria', component: GaleriaComponent },
   { path: 'carrusell', component: CarrusellComponent },
+  { path: 'card', component: CardComponent },
   { path: 'mensajes', component: MensajesComponent },
   { path: 'organizacionInfo', component: OrganizacionInformacionComponent },
   { path: 'organizacionTexto', component: OrganizacionTextoComponent },
