@@ -1,6 +1,7 @@
 <p>botones works!</p>
 
-<h1>
+<h1>botones coloridos</h1>
+<h1> 
   <p-button label="Primary" [raised]="true" />
 <p-button label="Secondary" [raised]="true" severity="secondary" [disabled]="true"/>
 <p-button label="Success" [raised]="true" severity="success" />
@@ -24,7 +25,7 @@
 </div>
 </h1>
 
-<h1>ico
+<h1>icono
   <div class="card">
     <div class="flex justify-content-center flex-wrap gap-3 mb-4">
         <p-button icon="pi pi-check" />
@@ -77,7 +78,86 @@
 </div>
 </h1>
  
+<hr>
+<h1>links</h1>
+<div class="card flex justify-content-center gap-3">
+    <p-button label="Link" [link]="true" />
+    <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer" class="p-button font-bold">
+        External
+    </a>
+    <a routerLink="/" class="p-button font-bold">
+        Router
+    </a>
+</div>
 
+<hr>
+<h1>summit</h1>
+<div class="card flex justify-content-center">
+    <p-button icon="pi pi-check" />
+    <p-button label="Submit" icon="pi pi-check" />
+    <p-button label="Submit" icon="pi pi-check" iconPos="right" />
+</div>
+
+<h1>severity</h1>
+<div class="card flex flex-wrap gap-3 justify-content-center">
+    <p-button label="Primary" />
+    <p-button label="Secondary" severity="secondary" />
+    <p-button label="Success" severity="success" />
+    <p-button label="Info" severity="info" />
+    <p-button label="Warning" severity="warning" />
+    <p-button label="Help" severity="help" />
+    <p-button label="Danger" severity="danger" />
+    <p-button label="Contrast" severity="contrast" />
+</div>
+
+<hr>
+<h1>redondeados</h1>
+<div class="card flex flex-wrap gap-3 justify-content-center">
+    <p-button label="Primary" [rounded]="true" />
+    <p-button label="Secondary" [rounded]="true" severity="secondary" />
+    <p-button label="Success" [rounded]="true" severity="success" />
+    <p-button label="Info" [rounded]="true" severity="info" />
+    <p-button label="Warning" [rounded]="true" severity="warning" />
+    <p-button label="Help" [rounded]="true" severity="help" />
+    <p-button label="Danger" [rounded]="true" severity="danger" />
+    <p-button label="Contrast" [rounded]="true" severity="contrast" />
+</div>
+
+<hr>
+<h1>text button</h1>
+<div class="card flex flex-wrap gap-3 justify-content-center">
+    <p-button label="Primary" [text]="true" />
+    <p-button label="Secondary" [text]="true" severity="secondary" />
+    <p-button label="Success" [text]="true" severity="success" />
+    <p-button label="Info" [text]="true" severity="info" />
+    <p-button label="Warning" [text]="true" severity="warning" />
+    <p-button label="Help" [text]="true" severity="help" />
+    <p-button label="Danger" [text]="true" severity="danger" />
+    <p-button label="Plain" [text]="true" [plain]="true" />
+</div>
+
+<hr>
+<h1>bordes</h1>
+<div class="card flex flex-wrap gap-3 justify-content-center">
+    <p-button label="Primary" [outlined]="true" />
+    <p-button label="Secondary" [outlined]="true" severity="secondary" />
+    <p-button label="Success" [outlined]="true" severity="success" />
+    <p-button label="Info" [outlined]="true" severity="info" />
+    <p-button label="Warning" [outlined]="true" severity="warning" />
+    <p-button label="Help" [outlined]="true" severity="help" />
+    <p-button label="Danger" [outlined]="true" severity="danger" />
+    <p-button label="Contrast" [outlined]="true" severity="contrast" />
+</div>
+
+<hr>
+<h1>sizes</h1>
+<div class="card flex justify-content-center flex-wrap gap-3 align-items-center">
+    <p-button label="Small" icon="pi pi-check" size="small" />
+    <p-button label="Normal" icon="pi pi-check" />
+    <p-button label="Large" icon="pi pi-check" size="large" />
+</div>
+
+<hr>
 <h1>Grupo
   <div class="card flex justify-content-center flex-wrap gap-3">
     <p-button label="Emails" badge="2" />
@@ -89,6 +169,9 @@
         outlined="true" />
 </div>
 </h1>
+
+
+
 <!--   
 <h1>Split
 
