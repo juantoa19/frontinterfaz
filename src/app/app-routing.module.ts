@@ -8,12 +8,13 @@ import { OrganizacionTextoComponent } from './components/organizacion-texto/orga
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CarrusellComponent } from './components/carrusell/carrusell.component';
-
+import { GaleriaComponent } from './components/galeria/galeria.component'
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'botones', component: BotonesComponent },
   { path: 'media', component: MediaComponent },
+  { path: 'galeria', component: GaleriaComponent },
   { path: 'carrusell', component: CarrusellComponent },
   { path: 'mensajes', component: MensajesComponent },
   { path: 'organizacionInfo', component: OrganizacionInformacionComponent },

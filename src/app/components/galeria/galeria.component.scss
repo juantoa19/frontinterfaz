@@ -1,0 +1,6 @@
+$imageMaxWidth: 300px;
+$imageMaxHeight: 200px;
+img.gallery-image {
+    max-width: $imageMaxWidth;
+    max-height: $imageMaxHeight;
+}
