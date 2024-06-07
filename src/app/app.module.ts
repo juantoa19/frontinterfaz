@@ -26,6 +26,7 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 import { CardComponent } from './components/card/card.component';
 import { CardModule } from 'primeng/card';
 
+
 @NgModule({
   declarations: [
     AppComponent,
